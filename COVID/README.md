@@ -44,7 +44,7 @@ I used **Lambda**, **API Gateway**, and **Amplify** to build the main base of th
  - Now, copy the same `JSON` contents from `test.json` in the lightning bolt.
  - **Test** and ensure response has **Code 200**.
  - Paste **Invoke URL** in line 52 where it says "YOUR-LINK".
- - Save file and upload again to **Amplify** as explained in [Step 1](https://github.com/kathangandhi/cloud/tree/master/COVID#step-1).
+ - Save file and upload again to **Amplify** as explained in [Step 1](https://github.com/kathangandhi/cloud/tree/master/COVID#step-1-amplify).
 
 Take a deep breath and try out your website. First cloud project was pretty easy innit?!
 
