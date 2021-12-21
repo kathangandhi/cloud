@@ -9,6 +9,7 @@ I used **Lambda**, **API Gateway**, and **Amplify** to build the main base of th
  - Name your app *whatever* and call your environment `dev`. 
  - Now, **Drag and Drop** your compressed folder. Then, **Save and Deploy**. 
  - Once your code has been deployed on the Amplify web app, it will generate a link. Access it in **Domain Management** and click to preview your website. 
+
 [WARNING: Some parts could be broken]
 
 ## Step 2 [S3]
@@ -27,6 +28,7 @@ I used **Lambda**, **API Gateway**, and **Amplify** to build the main base of th
  - Copy paste the given code into the code area and save. Now, **Select a test event** and then **Configure test events.** 
  - Now, type *whatever* for event name and then copy paste the contents of `test.json`. Finally, **Create** and click the **Test** button. Hopefully, you got "Your response has been collected. Thank you!"
  - Go back to your bucket and check its contents. It should match our expectations of a `jo.json` file. 
+ 
  [NOTE: For some reason, I couldn't make the policy specific to a **S3** bucket based on ARN. Bonus points if you can figure out how to make the policy ARN-specific. S3 doesn't store duplicates, so a survey filled out by the same person will only update file contents]
 
 ## Step 4 [API Gateway]
@@ -43,7 +45,7 @@ I used **Lambda**, **API Gateway**, and **Amplify** to build the main base of th
  - To test, click **Resources** and then **POST**.
  - Now, copy the same **JSON** contents from `test.json` in the lightning bolt.
  - **Test** and ensure response has `Code 200`.
- - Paste **Invoke URL** in line 52 where it says "YOUR-LINK".
+ - Paste **Invoke URL** in line 52 where it says `"YOUR-LINK"`.
  - Save file and upload again to **Amplify** as explained in [Step 1](https://github.com/kathangandhi/cloud/tree/master/COVID#step-1-amplify).
 
 Take a deep breath and try out your website. First cloud project was pretty easy innit?!
