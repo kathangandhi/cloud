@@ -49,7 +49,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("https://ttmti065vl.execute-api.us-west-1.amazonaws.com/dev", requestOptions)
+            fetch("YOUR-LINK", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
