@@ -29,7 +29,7 @@ I used **Lambda**, **API Gateway**, and **Amplify** to build the main base of th
  - Now, type *whatever* for event name and then copy paste the contents of `test.json`. Finally, **Create** and click the **Test** button. Hopefully, you got "Your response has been collected. Thank you!"
  - Go back to your bucket and check its contents. It should match our expectations of a `jo.json` file. 
  
- [NOTE: For some reason, I couldn't make the policy specific to a **S3** bucket based on ARN. Bonus points if you can figure out how to make the policy ARN-specific. S3 doesn't store duplicates, so a survey filled out by the same person will only update file contents]
+ [NOTE: For some reason, I couldn't make the policy specific to a **S3** bucket based on ARN. Bonus points if you can figure out how to make the policy ARN-specific. S3 doesn't store duplicates, so a survey filled out by the same person will only update file contents.]
 
 ## Step 4 [API Gateway]
  - Go to **API Gateway**. Start with **Create API**. Find **REST API** and **Build**.
