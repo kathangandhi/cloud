@@ -4,7 +4,7 @@ Imagine you're part of the COVID Response team for your university and you're ta
 I used **Lambda**, **API Gateway**, and **Amplify** to build the main base of the application. You can use whichever service you're comfortable with to store the survey results. In this example, I encoded the data as a bytestream with `UTF-8` settings and created unique `.json` files in **S3** for each first name and last name.
 
 ## Step 1 [Amplify]
- - First take `index.html` and then compress into a `ZIP` folder. 
+ - First take `index.html` and then compress into a ZIP folder. 
  - Now, let's set up **Amplify**. Click **Get Started** and then **Deploy without a Git Provider**. 
  - Name your app *whatever* and call your environment `dev`. 
  - Now, **Drag and Drop** your compressed folder. Then, **Save and Deploy**. 
@@ -21,7 +21,7 @@ I used **Lambda**, **API Gateway**, and **Amplify** to build the main base of th
  - Make sure to use `Python 3.8` for runtime. **Create Function** again and you will get "Successfully created the function".
  - Go to **Configuration** and select **Permissions**.
  - Click on link in **Execution role** followed by **Add inline policy**
- - Go to `JSON` tab and copy policy code from `policy.json`
+ - Go to **JSON** tab and copy policy code from `policy.json`
  - **Review Policy** and name it *whatever*
  - **Create Policy**
  - Copy paste the given code into the code area and save. Now, **Select a test event** and then **Configure test events.** 
@@ -41,8 +41,8 @@ I used **Lambda**, **API Gateway**, and **Amplify** to build the main base of th
  - Make **Stage Name** `dev`
  - Lastly, **Deploy** and make sure to copy URL next to **Invoke URL**.
  - To test, click **Resources** and then **POST**.
- - Now, copy the same `JSON` contents from `test.json` in the lightning bolt.
- - **Test** and ensure response has **Code 200**.
+ - Now, copy the same **JSON** contents from `test.json` in the lightning bolt.
+ - **Test** and ensure response has `Code 200`.
  - Paste **Invoke URL** in line 52 where it says "YOUR-LINK".
  - Save file and upload again to **Amplify** as explained in [Step 1](https://github.com/kathangandhi/cloud/tree/master/COVID#step-1-amplify).
 
